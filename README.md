@@ -24,11 +24,11 @@ MatPFF: Matlab FEM program for phase-field fracture (AT1/2, PFCZM) simulation
 >
 > 
 >
-> ![image-20241212195029484](\Results\WuLPlate\Image\Model.png)
+> ![image-20241212195029484](/Results/WuLPlate/Image/Model.png)
 >
 > Figure 4. The displacement-force curve.
 >
-> ![image-20241212195104897](\Results\WuLPlate\Image\Comparison.png)
+> ![image-20241212195104897](/Results/WuLPlate/Image/Comparison.png)
 
 
 
