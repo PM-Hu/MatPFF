@@ -22,7 +22,7 @@ filedir = mkResultsDir('Square\');
 fdc = [filedir, 'force_displacement.txt']; % as filename tell
 
 %% ***  Material para  *** (Miehe's Paper)
-Para.PFModel = 1; % 1-AT2; 2-AT1
+Para.PFModel = 1; % 1-AT2; 2-AT1; 3-PFCZM
 Para.ndim = 2;  % dim
 Para.isStress = 2;  % 1 - plane stress, 2 - plane strain
 Para.lambda = 121150; % Lame Constant 
@@ -66,7 +66,8 @@ for inc = 1:10000
         [Disp] = assembleElasKK(GaussInfo, elem, Phi, Para, BC);
         
         % compute the phase-field sub-problem
-        [Phi] = assembleElasKPhi(GaussInfo, elem, Disp, Para);
+        Phiold = Phi;
+        Phi = NewtonItPhaseField(GaussInfo, elem, Disp, Phi, Para);
         %
         % AMres = norm((Phiold-Phi))/norm(Kphi*Phi); % multi-pass
         AMres = 1d-4; % one-pass

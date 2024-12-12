@@ -4,11 +4,11 @@ MatPFF: Matlab FEM program for phase-field fracture (AT1/2, PFCZM) simulation
 ## Features
 
 - Two-dimensional linear elastic phase-field fracture 
-- AT1 & AT2  phase-field models, PFCZM will be added
+- AT1 & AT2  phase-field models, PFCZM is added in 24-12-12
 
 ## Example
 
-- LPlate
+- LPlate，AT1
 
 > Figure 1. Snapshot of the phase-field.
 >
@@ -17,6 +17,18 @@ MatPFF: Matlab FEM program for phase-field fracture (AT1/2, PFCZM) simulation
 > Figure 2. The displacement-force curve.
 >
 > ![fracture](Results/LPlate/Image/disp-force.png)
+
+- LPlate，PFCZM，A unified phase-field theory for the mechanics of damage and quasi-brittle failure
+
+> Figure 3. Model configuration.
+>
+> 
+>
+> ![image-20241212195029484](\Results\WuLPlate\Image\Model.png)
+>
+> Figure 4. The displacement-force curve.
+>
+> ![image-20241212195104897](\Results\WuLPlate\Image\Comparison.png)
 
 
 

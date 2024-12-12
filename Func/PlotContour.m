@@ -1,6 +1,6 @@
 function PlotContour(node,elem,value, isMesh)
 % % show the contour
-% % ** code by P.M.H @bit.edu.cn (CN) **
+% % ** code by P.M.Hu @bit.edu.cn (CN) **
 % %  Please feel free to contact us with any questions! 
 % %  - Email: pm_hu@outlook.com
 % %  ---------------------------------------
